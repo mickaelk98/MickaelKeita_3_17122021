@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 40%;
+    margin: 1rem auto;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: $search-bg;
+  @include search-shadow-inset;
+  font-size: 1.6rem;
+  i {
+    margin-right: 1.7rem;
+  }
+}

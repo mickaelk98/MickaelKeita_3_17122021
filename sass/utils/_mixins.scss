@@ -1,0 +1,28 @@
+// shadow
+@mixin card-shadow {
+  box-shadow: 0px 6px 9px 0px #00000040;
+}
+@mixin step-shadow {
+  box-shadow: 0px 3px 7px 0px #0000007a;
+}
+@mixin btn-shadow {
+  box-shadow: 0px 3px 7px 0px #0000007a;
+}
+
+@mixin search-shadow-inset {
+  box-shadow: inset 0px 2px 0px 0px #7e7a7a3f;
+}
+
+// hover
+@mixin btn-hover {
+  box-shadow: 0px 5px 6px 0px #1a111da3;
+  background: lighten($secondary-color, $amount: 5);
+  background: linear-gradient(
+    180deg,
+    lighten($secondary-color, $amount: 5) 0%,
+    lighten($primary-color, $amount: 5) 100%
+  );
+}
+
+@mixin heart-hover {
+}

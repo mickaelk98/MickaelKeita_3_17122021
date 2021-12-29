@@ -1,0 +1,60 @@
+// Restaurant BEM
+.card {
+  width: 85%;
+  border-radius: $card-radius;
+  @include card-shadow;
+  color: #000;
+  margin: 1.5rem auto;
+  background: #fff;
+  font-size: 1.8rem;
+
+  &:last-child {
+    margin-bottom: 7rem;
+  }
+
+  a {
+    color: #000;
+  }
+
+  &__img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: $card-radius $card-radius 0 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 1.5rem;
+
+    h3 {
+      font-weight: bold;
+      line-height: 2.5rem;
+
+      span {
+        font-weight: 300;
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  &__heart {
+    font-size: 2rem;
+  }
+
+  &--new {
+    position: relative;
+  }
+  &--new::before {
+    content: "nouveau";
+    position: absolute;
+    background: $tertiary-color;
+    color: darken($tertiary-color, $amount: 50);
+    padding: 0.5rem 1rem;
+    top: 1rem;
+    right: 1rem;
+    text-transform: capitalize;
+  }
+}
