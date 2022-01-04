@@ -63,3 +63,80 @@
     }
   }
 }
+
+//Menu des restaurants et prix
+
+.iteme-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  @include step-shadow;
+  font-size: 1.2rem;
+  background: #fff;
+  cursor: pointer;
+
+  &--checked:hover &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-size: 2rem;
+    color: #fff;
+    background: $tertiary-color;
+    border-radius: 0 1rem 1rem 0;
+    animation: circle-bg 0.5s linear;
+
+    i {
+      animation: circle 0.5s linear;
+    }
+  }
+
+  &__name {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+    padding: 0.5rem 1rem;
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &__price {
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  &__logo {
+    display: none;
+    font-size: 2rem;
+  }
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-bg {
+  0% {
+    width: 5%;
+  }
+  30% {
+    width: 10%;
+  }
+  60% {
+    width: 15%;
+  }
+  80% {
+    width: 18%;
+  }
+}

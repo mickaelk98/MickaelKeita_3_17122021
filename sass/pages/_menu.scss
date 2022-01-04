@@ -1,8 +1,31 @@
+.img-menu {
+  background: url(/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
+    center/cover;
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 main {
-  img {
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 4rem 4rem 0 0;
+  background: $res-step-des-bg;
+  transform: translateY(-6rem);
+}
+
+.title-heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  i {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-family: "shrikhand", sans-serif;
   }
 }
 
@@ -12,25 +35,6 @@ main {
 }
 
 .block-menu {
-  transform: translateY(-6rem);
-  background: #fff;
-  border-radius: 3rem 3rem 0 0;
-  .title-heart {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    margin: 0 auto;
-    padding: 2.5rem 0;
-    i {
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-family: "shrikhand", sans-serif;
-    }
-  }
-
   h3 {
     position: relative;
     width: 85%;
@@ -54,39 +58,5 @@ main {
     justify-content: center;
     width: 50%;
     margin: 5rem auto 0;
-  }
-}
-
-.iteme-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 85%;
-  margin: 1.5rem auto;
-  border-radius: 1rem;
-  @include step-shadow;
-  padding: 1rem;
-  font-size: 1.2rem;
-
-  &__name {
-    width: 80%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 2rem;
-
-    span {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  }
-
-  &__price {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    font-weight: bold;
-    font-size: 1.5rem;
   }
 }

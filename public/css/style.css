@@ -219,6 +219,73 @@ h3 {
   color: #9356dc;
 }
 
+.iteme-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 7px 0px #0000007a;
+  font-size: 1.2rem;
+  background: #fff;
+  cursor: pointer;
+}
+.iteme-menu--checked:hover .iteme-menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 2rem;
+  color: #fff;
+  background: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  animation: circle-bg 0.5s linear;
+}
+.iteme-menu--checked:hover .iteme-menu__logo i {
+  animation: circle 0.5s linear;
+}
+.iteme-menu__name {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+}
+.iteme-menu__name span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.iteme-menu__price {
+  align-self: flex-end;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.iteme-menu__logo {
+  display: none;
+  font-size: 2rem;
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle-bg {
+  0% {
+    width: 5%;
+  }
+  30% {
+    width: 10%;
+  }
+  60% {
+    width: 15%;
+  }
+  80% {
+    width: 18%;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -378,10 +445,33 @@ h2 {
   margin-top: 5rem;
 }
 
-main img {
+.img-menu {
+  background: url(/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
   height: 25rem;
   width: 100%;
   object-fit: cover;
+}
+
+main {
+  width: 100%;
+  border-radius: 4rem 4rem 0 0;
+  background: #f6f6f6;
+  transform: translateY(-6rem);
+}
+
+.title-heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.title-heart i {
+  font-size: 2rem;
+}
+.title-heart h2 {
+  font-family: "shrikhand", sans-serif;
 }
 
 .block-menu:nth-child(2),
@@ -389,25 +479,6 @@ main img {
   margin-bottom: 5rem;
 }
 
-.block-menu {
-  transform: translateY(-6rem);
-  background: #fff;
-  border-radius: 3rem 3rem 0 0;
-}
-.block-menu .title-heart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 85%;
-  margin: 0 auto;
-  padding: 2.5rem 0;
-}
-.block-menu .title-heart i {
-  font-size: 2rem;
-}
-.block-menu .title-heart h2 {
-  font-family: "shrikhand", sans-serif;
-}
 .block-menu h3 {
   position: relative;
   width: 85%;
@@ -429,37 +500,6 @@ main img {
   justify-content: center;
   width: 50%;
   margin: 5rem auto 0;
-}
-
-.iteme-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 85%;
-  margin: 1.5rem auto;
-  border-radius: 1rem;
-  box-shadow: 0px 3px 7px 0px #0000007a;
-  padding: 1rem;
-  font-size: 1.2rem;
-}
-.iteme-menu__name {
-  width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 2rem;
-}
-.iteme-menu__name span {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.iteme-menu__price {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-weight: bold;
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
