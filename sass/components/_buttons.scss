@@ -100,9 +100,10 @@
     text-overflow: ellipsis;
     line-height: 2rem;
     padding: 0.5rem 1rem;
+    font-size: 1.1rem;
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: bold;
     }
   }
@@ -110,8 +111,8 @@
   &__price {
     align-self: flex-end;
     font-weight: bold;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0 1rem 1rem 0;
+    font-size: 1.1rem;
   }
 
   &__logo {

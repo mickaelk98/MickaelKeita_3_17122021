@@ -1,6 +1,8 @@
+body {
+  background: $res-step-des-bg;
+}
+
 .img-menu {
-  background: url(/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
-    center/cover;
   height: 25rem;
   width: 100%;
   object-fit: cover;
@@ -15,17 +17,16 @@ main {
 
 .title-heart {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 85%;
   margin: 0 auto;
   padding: 2rem 0;
-  i {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 
   h2 {
     font-family: "shrikhand", sans-serif;
+    font-size: 2rem;
   }
 }
 
@@ -40,6 +41,7 @@ main {
     width: 85%;
     text-transform: uppercase;
     margin: 0 auto 3rem;
+    font-size: 1.6rem;
 
     &::after {
       content: "";
