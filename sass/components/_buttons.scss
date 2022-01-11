@@ -1,20 +1,29 @@
 // Bouttons
 .btn {
-  padding: 1.5rem 2rem;
-  margin-bottom: 5rem;
-  border-radius: $btn-radius;
-  border-style: none;
-  @include btn-shadow;
-  color: #fff;
-  background: $secondary-color;
-  background: linear-gradient(180deg, $secondary-color 0%, $primary-color 100%);
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &:hover {
-    @include btn-hover;
+  &__value {
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: $btn-radius;
+    border-style: none;
+    @include btn-shadow;
+    color: #fff;
+    background: $secondary-color;
+    background: linear-gradient(
+      180deg,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
+    cursor: pointer;
+
+    &:hover {
+      @include btn-hover;
+    }
   }
 }
-
 // les 3 etape de fonctionnements BEM
 .step {
   position: relative;

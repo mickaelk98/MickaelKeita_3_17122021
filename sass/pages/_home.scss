@@ -50,3 +50,74 @@ h2 {
     margin-top: 5rem;
   }
 }
+
+@media screen and (min-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+// tablette
+@media screen and (min-width: 768px) {
+  .main-home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "des steps" "res res";
+  }
+
+  .description {
+    grid-area: des;
+  }
+
+  .steps {
+    grid-area: steps;
+    @include card-shadow;
+  }
+
+  .restaurant {
+    grid-area: res;
+    box-shadow: 0 -8px 8px 0px #00000036;
+  }
+
+  .card__img {
+    height: 20rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+// desktop
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      width: 20%;
+      max-width: 30rem;
+      margin: 1rem;
+    }
+  }
+
+  .search {
+    width: 30%;
+    font-size: 1.6rem;
+    i {
+      margin-right: 1.7rem;
+    }
+  }
+
+  .restaurant {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "title title";
+    align-items: flex-start;
+    h2 {
+      grid-area: title;
+      text-align: center;
+    }
+  }
+}
