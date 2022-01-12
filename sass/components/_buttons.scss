@@ -73,8 +73,30 @@
   }
 }
 
-//Menu des restaurants et prix
+// animation itemes de menu
+.iteme-menu:nth-child(2) {
+  // background: #000;
+  animation: menu 1s linear;
+  animation-delay: 0.8s;
+}
 
+.iteme-menu:nth-child(3) {
+  // background: #000;
+  animation: menu 2s linear;
+  animation-delay: 0.8s;
+}
+.iteme-menu:nth-child(4) {
+  // background: #000;
+  animation: menu 3s linear;
+  animation-delay: 0.8s;
+}
+.iteme-menu:nth-child(5) {
+  // background: #000;
+  animation: menu 4s linear;
+  animation-delay: 0.8s;
+}
+
+//Menu des restaurants et prix
 .iteme-menu {
   display: flex;
   justify-content: space-between;
@@ -148,5 +170,16 @@
   }
   80% {
     width: 18%;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translatey(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
   }
 }

@@ -24,6 +24,7 @@
   }
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +36,7 @@
 
       span {
         font-weight: 300;
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
       }
     }
   }
@@ -43,6 +44,25 @@
   &__heart {
     font-size: 2rem;
   }
+
+  // &__heart-empty,
+  // &__heart-full {
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 1.5rem;
+  // }
+
+  // &__heart-empty {
+  //   color: #000;
+  //   font-size: 2rem;
+  // }
+
+  // &__heart-full {
+  //   color: #fff;
+  //   &:hover {
+  //     color: teal;
+  //   }
+  // }
 
   &--new {
     position: relative;
