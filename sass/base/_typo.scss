@@ -2,6 +2,18 @@
   font-size: 10px;
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url(/public/font/Roboto/Roboto-Black.ttf),
+    url(/public/font/Roboto/Roboto-Bold.ttf),
+    url(/public/font/Roboto/Roboto-Light.ttf),
+    url(/public/font/Roboto/Roboto-Medium.ttf),
+    url(/public/font/Roboto/Roboto-Regular.ttf);
+
+  font-family: "shrikhand";
+  src: url(/public/font/Shrikhand/Shrikhand-Regular.ttf);
+}
+
 // Police d'ecriture
 body {
   font-family: "roboto", sans-serif;

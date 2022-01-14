@@ -43,7 +43,21 @@
 
   &__heart {
     font-size: 2rem;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #000;
+
+    &:hover {
+      background: linear-gradient($primary-color, $secondary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: unset;
+    }
   }
+  // &__heart {
+  //   font-size: 2rem;
+  // }
 
   // &__heart-empty,
   // &__heart-full {
